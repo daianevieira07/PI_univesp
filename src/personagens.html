@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>PokeLovers - Pokémons</title>
+    <link rel="stylesheet" href="image/style.css" />
+</head>
+
+<body>
+    <div id="details" class="details">
+        <div class="details-content">
+            <span class="close">&times;</span>
+            <p id="modal1"></p>
+        </div>
+    </div>
+    <header>
+        <nav class="menu font-std">
+            <ul class="list">
+                <li> <button id="home" class="font-std button"> Tela Inicial</button></li>
+                <li> <button id="play" class="font-std button"> Ir pro Jogo </button></li>
+                <li> <button id="btn-all" class="btn-all font-std button">Ver Todos</button>
+                </li>
+            </ul>
+
+            <form action="" id="search-form" class="search-form font-std">
+                <section class="menu2 backgray">
+
+                    <label for="name-pokemon" class="name-search label">Buscar por Nome:</label>
+                    <input class="input" type="text" id="name-pokemon" placeholder="Nome do Pokémon">
+                    <label for="filter-type" class="filter-type label1"> Filtrar por:</label>
+                    <select id="filter-type" class="filter-type select">
+                        <option value="" disabled selected> Tipos</option>
+                        <option value="Water">Água</option>
+                        <option value="Dragon">Dragão</option>
+                        <option value="Electric">Elétrico</option>
+                        <option value="Ghost">Fantasma</option>
+                        <option value="Fire">Fogo</option>
+                        <option value="Ice">Gelo</option>
+                        <option value="Grass">Grama</option>
+                        <option value="Bug">Inseto</option>
+                        <option value="Fighting">Lutador</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Rock">Pedra</option>
+                        <option value="Psychic">Psíquico</option>
+                        <option value="Ground">Terrestre</option>
+                        <option value="Poison">Venenoso</option>
+                        <option value="Flying">Voador</option>
+                    </select>
+
+
+                    <label for="filter-weakness" class="filter-weakness label1">Filtrar por:</label>
+                    <select id="filter-weakness" class="filter-weakness select">
+                        <option value="" disabled selected> Fraquezas</option>
+                        <option value="Water">Água</option>
+                        <option value="Dragon">Dragão</option>
+                        <option value="Electric">Elétrico</option>
+                        <option value="Fairy">Fada</option>
+                        <option value="Fire">Fogo</option>
+                        <option value="Ice">Gelo</option>
+                        <option value="Grass">Grama</option>
+                        <option value="Bug">Inseto</option>
+                        <option value="Fighting">Lutador</option>
+                        <option value="Rock">Pedra</option>
+                        <option value="Psychic">Psíquico</option>
+                        <option value="Ground">Terrestre</option>
+                        <option value="Poison">Venenoso</option>
+                        <option value="Flying">Voador</option>
+                    </select>
+                    <label for="order-search" class="order-search label"> Ordenar por:</label>
+                    <select id="order-search" class="order-search select">
+                        <option id="teste" value="" disabled selected> Escolha a Ordem:</option>
+                        <option value="order-az"> Nomes A - Z</option>
+                        <option value="order-za"> Nomes Z - A</option>
+                        <option value="size"> Tamanho Ascendente</option>
+                        <option value="size-reverse"> Tamanho Descendente </option>
+                        <option value="order-spawn"> Maior Chance de Captura</option>
+                    </select>
+                </section>
+            </form>
+        </nav>
+    </header>
+
+    <main class="main-poke">
+        <div id="div-calc" class="calc-area backgray"></div>
+        <div id="div-pokes" class="div-pokes font-std"></div>
+    </main>
+    <button id="btn-top" class="btn-top font-std">Topo</button>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
